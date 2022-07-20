@@ -1,6 +1,6 @@
 export default {
   fetchHero: {
-    title: "Choose Your Hero",
+    title: "See your Heroes",
     url: `/heroes`,
   },
 };

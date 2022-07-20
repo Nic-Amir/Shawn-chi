@@ -9,7 +9,7 @@ function Nav() {
         {Object.entries(requests).map(([key, { title, url }]) => (
           <h2
             key={key}
-            onClick={() => router.push(`/heroes`)}
+            onClick={() => router.push(`${url}`)}
             className="cursor-pointer transition duration-100 hover:scale-125 
           hover:text-white active:text-blue-700"
           >
