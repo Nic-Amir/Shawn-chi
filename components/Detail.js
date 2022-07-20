@@ -1,7 +1,6 @@
 import React from "react";
 import Service from "../utils/Service";
 import Image from "next/image";
-import DetailTile from "./DetailTile";
 
 function Detail({ value }) {
   const [hero, setHero] = React.useState([]);
@@ -17,16 +16,20 @@ function Detail({ value }) {
   };
 
   React.useEffect(() => {
+    console.log(value);
     getAHero(value);
   }, []);
-
-  console.log(hero);
 
   if (!hero) {
     return <div>Loading</div>;
   }
 
-  return <div className="text-white"></div>;
+  return (
+    <div className="text-white">
+      <img src={hero?.images?.md} />
+      <h1>{hero?.images?.md}</h1>
+    </div>
+  );
 }
 
 export default Detail;
