@@ -17,7 +17,6 @@ export default function HeroDetails() {
 
       <main className="bg-black">
         <Header />
-        <Nav />
         <div className="text-white"></div>
         <Detail value={heroId} />
       </main>
